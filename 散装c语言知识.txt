@@ -1,0 +1,81 @@
+1./*for语句for( i= 0 ; i < m; i++)
+{
+
+    
+}*/
+2. /*if 语句if ( im<0 ){
+          
+     } else{
+         
+     }*/  //在没有大括号情况下，else总是和与它最近的if匹配
+3.  %取余
+4.通过对输出值scanf改写为%f 来表示为浮点数
+或者可以通过对变量设置时使用double，，输出值scanf中也要变为%lf.两种情况对于printf都得用%f
+5.常量的设置用“ const int AMOUNT"
+6.单目运算如  a*+b  与  a*-b,运算顺序自右向左
+7.a 与 b的值的互换引用一个t
+8.     +=  -=  *=  /=  %=(例子：a+=1 意思为a = a + 1    )
+9.++  -- 递增 和递减 一定要和变量一起使用
+10.++a本身的值是在原值基础上加1，同时原值也变为+1后的值输出
+      a++本身等于原值，但会将原值+1后输出
+11.  int type;
+  scanf("%d",&type);
+  switch( type )                         括号内是量
+  {                   大括号
+   case 1:
+      printf("nihao");                执行什么
+      break;                              必不可缺
+   case 2:
+      printf("zaoshanghao");
+      break;
+   case 3:
+      printf("wanshanghao");
+      break;
+    default:
+      printf("gunyibianqu");
+      break;
+ }
+12.！=不等于，，==等于
+13.break和continue
+break:循环遇到符合条件的情况结束，continue:循环没有遇到符合条件就不执行后面的代码，继续循环
+14.数据类型：
+整数：char，short，int，long，long long
+浮点数：float，double，long double
+逻辑：bool
+指针
+15.0开头八进制（%o）；0x开头十六进制(%x或者%X)
+16.小寄巧（a*b）%c=【（a%c）*（b%c）】%c
+17.char即是字符也是整数；
+#include<stdio.h>
+int main()
+{
+  int n;
+  char d;
+  scanf("%d",&n);
+  d = n;
+  printf("c = %d\n",d);     整数的49等于字符的'1'
+  printf("c = %c",d);
+  
+   return 0;
+18.scanf("%d %c")和scanf("%d%c")没有空格则整数部分读完才可以读字符，有空格将一段整数读完后字符也读入
+19.\b回退一格给紧跟其后的数据腾位置
+     \t 到下一个表格位四单元一个表格位
+     \n换行
+     \r回车
+20.强制转换   (目标类型)数据   **在没有括号情况下，强制转换优先度高于四则运算
+21.bool的引用
+    #include<stdbool.h>头文件
+22.逻辑运算：！逻辑非     &&逻辑与    ||逻辑或    (优先级：!>&&>||)
+对于&&来说，左边是false时右边就不做了
+对于||来说，左边是true时右边就不做了
+23.区间  例：x>4&&x<6
+24.count = (count>20)?count-10:count+10;(？后面时是满足则执行，：后面是不满足时执行)
+25.逗号表达：for(i = 0,j = 10;i<j;i++,j--)
+26.%d的输出要在前面加%
+
+
+
+
+
+
+
