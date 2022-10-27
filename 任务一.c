@@ -13,7 +13,7 @@ void Delay(unsigned int xms)
 		} 	while (--i);
 		xms--;
 	}
-}//无用循环，耗时间
+}//脦脼脫脙脩颅禄路拢卢潞脛脢卤录盲
 void main()
 {
 		while(1)
